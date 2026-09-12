@@ -143,5 +143,40 @@ if (projectsBtn && projectsSubmenu) {
 
 /*=============== CUSTOM CURSOR ===============*/
 
+/*=============== SKILLS ANIMATION & INTERACTIVE ===============*/
+const skillCards = document.querySelectorAll('.skills__card')
 
+const animateSkills = () => {
+   skillCards.forEach(card => {
+      const percent = card.getAttribute('data-percent')
+      const progressBar = card.querySelector('.skills__percentage')
+      if (progressBar) {
+         progressBar.style.width = percent
+      }
+   })
+}
+
+// 1. Langsung jalankan animasi bar saat halaman dibuka/direfresh
+document.addEventListener('DOMContentLoaded', animateSkills)
+window.addEventListener('load', animateSkills)
+
+// 2. Interaktivitas saat Hover & Klik pada Card
+skillCards.forEach(card => {
+   card.addEventListener('click', () => {
+      skillCards.forEach(c => c.classList.remove('active-skill'))
+      card.classList.add('active-skill')
+   })
+})
+
+// 3. Jalankan animasi progress bar saat ter-scroll ke area Skills
+const skillsSection = document.getElementById('skills')
+if (skillsSection) {
+   window.addEventListener('scroll', () => {
+      const sectionPos = skillsSection.getBoundingClientRect().top
+      const screenPos = window.innerHeight / 1.2
+      if (sectionPos < screenPos) {
+         animateSkills()
+      }
+   })
+}
 /*=============== SCROLLREVEAL ANIMATION ===============*/
