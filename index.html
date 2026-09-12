@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Undergraduate Student of Information System at Universitas Sriwijaya, Palembang. I am a student who is interested in web development and design.">
+        <meta name="robots" content="index, follow"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="aset/foto/favicon.ico" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="aset/css/style.css">
+        <title>AGNESETO PORTOFOLIO WEBSITE</title>
+    </head>
+    <body>
+
+      <!--=== HEADER & NAV ===-->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/index.html" class="nav__logo">Agneseto</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item-dropdown">
+                        <a href="#projects" class="nav__link" id="projects-btn">
+                            Projects <i class="ri-arrow-down-s-line dropdown__icon"></i>
+                        </a>
+                        <ul class="nav__submenu" id="projects-submenu">
+                            <li>
+                                <a href="#projects" class="nav__link nav__sublink" data-category="non-it">Non-IT</a>
+                            </li>
+                            <li>
+                                <a href="#projects" class="nav__link nav__sublink" data-category="it">IT</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Close -->
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+
+            <!-- Toggle -->
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+      </header>   
+
+      <!--======== MAIN ========-->
+      <main class="main">
+        
+        <!-- CUSTOM CURSOR -->
+        <div class="custom-cursor"></div>
+
+        <!--============= HOME SECTION =============-->
+        <section class="home section" id="home">
+            <div class="blob-small"></div>
+            <div class="blob-small"></div>
+
+            <div class="home-container container grid">
+                <div class="home__data">
+                    <h3 class="home__subtitle">Agneseto Resibera</h3>
+
+                    <h1 class="home__title">
+                        Web Designer & <br> 
+                        <span id="home-typed">Visual Enthusiast</span>
+                    </h1>
+                    <p class="home__description">Learning Web Design and Media Information</p>  
+                </div>
+
+                <div class="home__images">
+                    <div class="home__box-1"></div>
+                    <div class="home__box-2"></div>
+                    <div class="home__box-3"></div>
+
+                    <img src="aset/foto/home.png" alt="Undergraduate Information System" class="home__img">
+
+                    <div class="home__circle">
+                        <span class="home__text" id="home-text">EXPLORE - MORE - LET'S-</span>
+
+                        <a href="#about" class="home__arrow">
+                            <i class="ri-arrow-down-line"></i>
+                        </a>
+                    </div> 
+
+                    <div class="blob-big"></div>
+                </div> 
+            </div>
+        </section>
+        
+        <!--============= ABOUT SECTION ================-->
+        <section class="about section">
+            <div class="about__container container grid">
+                <h2 class="about__title">
+                About Me: I'm the undergraduate Information System Sriwijaya University, who enjoys <span>web design</span> and <span>media information</span>. Still learn but i'm passionate this work.
+                </h2>
+                <div class="about__info">
+                    <p class="class about__description">
+                        If you interest, contact me for work purpose.
+                    </p>
+
+                    <a href="#contact" class="about__button button">
+                        <span>Contact Me</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--============= PROJECTS SECTION =============-->
+        <section class="project section" id="projects">
+            <h2 class="section__title">
+                View My <span>Projects</span>
+            </h2>
+
+            <!-- Project Categories -->
+            <div class="project__categories container">
+                <div class="category__card active-category" data-category="non-it">
+                    <h3 class="category__title">NON-IT</h3>
+                    <p class="category__description">For Public Purpose</p>
+                </div>
+
+                <div class="category__card" data-category="it">
+                    <h3 class="category__title">IT</h3>
+                    <p class="category__description">For TID comittee</p>
+                </div>
+            </div>
+
+            <!-- Projects List Container -->
+            <div class="project__container container grid">
+                <div class="project__swiper">
+                    <div>
+                        <!-- Contoh Proyek NON-IT -->
+                        <article class="project_card" data-category="non-it">
+                            <a href="#" target="_blank" class="project_link">
+                                <img src="aset/foto/THUMBNAIL 5 DAYS  (800 x 550 piksel).png" alt="" class="project__img">
+                                <div class="project__arrow">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </div>
+                            </a>
+                            <div class="project__data">
+                                <span class="project__number">01</span>
+                                <p class="project__status">Done</p>
+                                <h3 class="project__name">5 DAYS (Short Movie)</h3>
+                                <p class="project__description">5 DAYS is a project for art assignment grade. In this project I get 2 roles, Director & Scriptwriter</p>
+                            </div>
+                            <div class="blob-big"></div>
+                        </article>
+
+                        <!-- Contoh Proyek IT -->
+                        <article class="project_card" data-category="it">
+                            <a href="#" target="_blank" class="project_link">
+                                <img src="aset/foto/Tangkapan Layar 2026-09-12 pukul 07.20.10.png" alt="" class="project__img">
+                                <div class="project__arrow">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </div>
+                            </a>
+                            <div class="project__data">
+                                <span class="project__number">01</span>
+                                <p class="project__status">On Develop</p>
+                                <h3 class="project__name">Frozen Food Hut Website</h3>
+                                <p class="project__description">
+                                    The first "Vibe Code" website that built with HTML, CSS, React, and Next JS, I build this website is for family startup. (Note: Still AI Slop)
+                                </p>
+                            </div>
+                             <a href="#" target="_blank" class="project_link">
+                                <img src="aset/foto/Tangkapan Layar 2026-09-12 pukul 07.23.46.png" alt="" class="project__img">
+                                <div class="project__arrow">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </div>
+                            </a>
+                            <div class="project__data">
+                                <span class="project__number">02</span>
+                                <p class="project__status">On Progress</p>
+                                <h3 class="project__name">Portofolio Website</h3>
+                                <p class="project__description">
+                                    The first project website that I built with HTML, CSS, and JavaScript.
+                                </p>
+                            </div>
+                            
+                            <div class="blob-big"></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== SKILLS SECTION ==============-->
+        <section title="skill section" id="skills">
+            <h2 class="section__title">
+                My <span>Skills</span>
+            </h2>
+            <p class="skills__description">
+                My skills are those I've learned nearly this year.
+            </p>
+
+            <div class="skills__container container grid">
+                <article class="skills__card">
+                    
+                </article>
+
+            </div>
+        </section>
+      </main>
+        
+      <!--==================== FOOTER ====================-->
+      <footer class="footer"></footer>
+
+      <!--=============== SCRIPTS ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script src="aset/js/main.js"></script>
+    </body>
+</html>
